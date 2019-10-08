@@ -123,12 +123,6 @@ p {
   }
 }
 
-@media only screen and (max-width: 860px) {
-  footer {
-    position: relative;
-  }
-}
-
 @media only screen and (max-width: 729px) {
   #me {
     float: none;
@@ -138,5 +132,11 @@ p {
   .card-left p {
     float: none;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  footer {
+    position: relative;
   }
 }
