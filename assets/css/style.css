@@ -4,6 +4,7 @@
 }
 
 body {
+  background: url(../images/background.jpg);
   min-height: 100vh;
   position: relative;
   margin: 0;
