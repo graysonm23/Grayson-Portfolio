@@ -96,3 +96,9 @@ p {
 #contacttext {
   color: white;
 }
+
+@media only screen and (max-width: 576px) {
+  .technicalSkillsCont {
+    text-align: center;
+  }
+}
