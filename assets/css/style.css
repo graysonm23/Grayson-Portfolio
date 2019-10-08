@@ -128,3 +128,15 @@ p {
     position: relative;
   }
 }
+
+@media only screen and (max-width: 729px) {
+  #me {
+    float: none;
+    display: block;
+  }
+
+  .card-left p {
+    float: none;
+    display: block;
+  }
+}
