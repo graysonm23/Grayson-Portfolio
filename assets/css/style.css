@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam|Lato|Roboto&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +8,14 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 .page-bg {
@@ -41,12 +50,14 @@ body {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   padding: 30px 30px;
+  border-radius: 6px;
 }
 
 #columnBg {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   padding: 30px 0px;
+  border-radius: 6px;
 }
 
 #columnBg:hover {
@@ -61,9 +72,12 @@ body {
   transition: 0.3s ease 0.3s;
 }
 
-#contact-form {
+.contact-form {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 80px 0px;
+  margin: 5% 10%;
+  border-radius: 6px;
 }
 
 footer {
@@ -107,6 +121,9 @@ li {
 .card-title {
   text-align: center;
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 .footer-copyright {
@@ -163,6 +180,7 @@ li {
   border-radius: 5px;
   background-color: #1955c0;
   color: white;
+  mix-blend-mode: hard-light;
 }
 
 .cust-grid {
@@ -177,6 +195,16 @@ li {
 
 #contacttext {
   color: white;
+}
+
+#submitButton {
+  background-color: inherit;
+  position: relative;
+  left: 200px;
+}
+
+.buttonDiv {
+  max-width: 500px;
 }
 
 @media only screen and (max-width: 576px) {

@@ -36,85 +36,97 @@
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
+              ><i class="fas fa-home"></i>Home
+              <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="portfolio.html"
+              ><i class="fas fa-portrait"></i>Portfolio</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html"
+              ><i class="fas fa-at"></i>Contact</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-    <div class="row cust-grid">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cust-grid-col">
-        <!-- <div class="card card-left"> -->
-        <div class="card-left card-body">
-          <h4 class="card-title">Contact</h4>
-          <hr />
+    <div style="padding-top: 10px;" class="contact-form">
+      <div class="row cust-grid">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cust-grid-col">
+          <!-- <div class="card card-left"> -->
+          <div class="card-left card-body">
+            <h2 class="card-title">Contact</h2>
+            <hr />
+          </div>
+          <!--insert form section here-->
         </div>
-        <!--insert form section here-->
       </div>
+      <form name="contact-form" action="mail.php" method="POST">
+        <!--Grid row-->
+        <div class="row cust-grid">
+          <!--Grid column-->
+          <div class="col-md-4 cust-grid-col">
+            <div class="md-form mb-0">
+              <input type="text" id="name" name="name" class="form-control" />
+              <label id="contacttext" for="name" class="">Your name</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 cust-grid-col">
+            <div class="md-form mb-0">
+              <input type="text" id="email" name="email" class="form-control" />
+              <label id="contacttext" for="email" class="">Your email</label>
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row cust-grid">
+          <div class="col-md-8 cust-grid-col">
+            <div class="md-form mb-0">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control"
+              />
+              <label id="contacttext" for="subject" class="">Subject</label>
+            </div>
+          </div>
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row cust-grid">
+          <!--Grid column-->
+          <div class="col-md-8 cust-grid-col">
+            <div class="md-form">
+              <textarea
+                type="text"
+                id="message"
+                name="message"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label id="contacttext" for="message">Your message</label>
+            </div>
+          </div>
+        </div>
+        <!--Grid row-->
+        <div class="buttonDiv">
+          <button id="submitButton" type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
-    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-      <!--Grid row-->
-      <div class="row cust-grid">
-        <!--Grid column-->
-        <div class="col-md-4 cust-grid-col">
-          <div class="md-form mb-0">
-            <input type="text" id="name" name="name" class="form-control" />
-            <label id="contacttext" for="name" class="">Your name</label>
-          </div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-4 cust-grid-col">
-          <div class="md-form mb-0">
-            <input type="text" id="email" name="email" class="form-control" />
-            <label id="contacttext" for="email" class="">Your email</label>
-          </div>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
-      <div class="row cust-grid">
-        <div class="col-md-8 cust-grid-col">
-          <div class="md-form mb-0">
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              class="form-control"
-            />
-            <label id="contacttext" for="subject" class="">Subject</label>
-          </div>
-        </div>
-      </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
-      <div class="row cust-grid">
-        <!--Grid column-->
-        <div class="col-md-8 cust-grid-col">
-          <div class="md-form">
-            <textarea
-              type="text"
-              id="message"
-              name="message"
-              rows="2"
-              class="form-control md-textarea"
-            ></textarea>
-            <label id="contacttext" for="message">Your message</label>
-          </div>
-        </div>
-      </div>
-      <!--Grid row-->
-    </form>
     <!-- Footer -->
     <footer
       id="smallFooter"
