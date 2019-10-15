@@ -101,9 +101,11 @@ li {
 }
 
 #me {
+  height: 200px;
+  width: 200px;
   float: left;
   padding-right: 40px;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 .right-card {
