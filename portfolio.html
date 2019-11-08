@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="page-bg"></div>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" id="navBar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +30,7 @@
           </ul>
         </div>
     </nav>
-    <div class="row cust-grid">
+    <div class="row cust-grid" id="portfolioContent">
       <div style="padding-top: 10px" id="columnBgP" class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cust-grid-col">
         <!-- <div class="card card-left"> -->
         <div class="card-left card-body">
@@ -38,27 +38,27 @@
           <hr />
         </div>
         <div class="mygames">
-          <div class="game">
+          <div class="game" id="hangmanGame">
             <a href="https://graysonm23.github.io/Word-Guess-Game/">
             <img class="image" alt="hangman game image" src="assets/images/image1.png" /></a>
             <h1 class="text"><span>HANGMAN</span></h1>
           </div>
-          <div class="game">
+          <div class="game" id="rpgGame">
             <a href="https://graysonm23.github.io/RockPaperScissors/">
             <img class="image" alt="role-playing game image" src="assets/images/image2.jpg" /></a>
             <h1 class="text"><span>RPG GAME</span></h1>
           </div>
-          <div class="game">
+          <div class="game" id="triviaGame">
             <a href="https://graysonm23.github.io/TriviaGame/">
             <img class="image" alt="trivia game image" src="assets/images/image3.jpg" /></a>
             <h1 class="text"><span>TRIVIA GAME</span></h1>
           </div>
-          <div class="game">
+          <div class="game" id="rutgersWidget">
             <a href="https://graysonm23.github.io/RockPaperScissors/">
             <img class="image" alt="rutgers info widget image" src="assets/images/image4.jpg" /></a>
             <h1 class="text"><span>RUTGERS INFO WIDGET</span></h1>
           </div>
-          <div class="game">
+          <div class="game" id="rpsGame">
             <a href="https://graysonm23.github.io/RockPaperScissors/">
             <img class="image" alt="rock paper scissors game image" src="assets/images/image5.png" /></a>
             <h1 class="text"><span>ROCK PAPER SCISSORS</span></h1>
@@ -115,5 +115,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/javascript.js"></script>
   </body>
 </html>

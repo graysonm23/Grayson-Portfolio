@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="page-bg"></div>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" id="navBar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,8 +36,8 @@
         </ul>
       </div>
     </nav>
-    <div class="row justify-content-around">
-      <div id="columnBg" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div class="row justify-content-around" id="profileContent">
+      <div id="columnBg" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <!-- <div class="card card-left"> -->
         <div class="card-left card-body">
             <h4 class="card-title">Grayson McMurry</h4>
@@ -56,20 +56,22 @@
         </div>
         <!-- </div> -->
       </div>
-      <div id="columnBg" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div id="columnBg" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <!-- <div class="card"> -->
         <div class="card-body Technical">
             <h4 class="card-title">Technical Skills</h4>
             <hr>
             <div class="technicalSkillsCont">
                 <p class="card-text"><ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li><i class="fab fa-html5"></i>HTML</li>
+                    <li><i class="fab fa-css3"></i>CSS</li>
+                    <li><i class="fab fa-js-square"></i>JavaScript</li>
                     <li>JQuery</li>
+                    <li><i class="fab fa-github"></i>Git</li>
                     <li>Ajax</li>
                     <li>JSON</li>
                     <li>Firebase</li>
+                    <li><i class="fab fa-node-js"></i>Node.js</li>
                 </ul></p>
             </div>
         </div>
@@ -126,5 +128,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/javascript.js"></script>
   </body>
 </html>
