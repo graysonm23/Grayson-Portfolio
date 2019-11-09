@@ -110,6 +110,7 @@ li {
 	float: left;
 	padding-right: 40px;
 	border-radius: 10px;
+	filter: brightness(125%);
 }
 
 .right-card {
