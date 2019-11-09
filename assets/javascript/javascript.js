@@ -28,7 +28,7 @@ docReady(function() {
 	// DOM is loaded and ready for manipulation here
 	tl.fromTo(
 		pageBg,
-		1.5,
+		1,
 		{ height: "0%" },
 		{ height: "100%", ease: Power2.easeInOut }
 	)
