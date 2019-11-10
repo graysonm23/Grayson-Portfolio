@@ -33,18 +33,11 @@ h2 {
 	z-index: -1;
 }
 
-/* #columnBgP .game:hover {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-	box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.5);
-	position: relative;
-	top: -0.4em;
-	z-index: 2;
-	transition: 0.3s ease 0.3s;
-} */
+.my-logo {
+	height: 50px;
+	width: 125px;
+	padding-right: 10px;
+}
 
 #columnBgP {
 	background-color: rgb(0, 0, 0); /* Fallback color */
@@ -105,12 +98,11 @@ li {
 }
 
 #me {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 300px;
 	float: left;
 	padding-right: 40px;
 	border-radius: 10px;
-	filter: brightness(125%);
 }
 
 .right-card {
@@ -119,6 +111,11 @@ li {
 
 .row {
 	margin-top: 20px;
+}
+
+.indexrow,
+.portrow {
+	height: 90vh;
 }
 
 .card-body {
@@ -215,18 +212,13 @@ li {
 	margin: auto;
 }
 
-@media only screen and (max-width: 576px) {
-	/* .technicalSkillsCont {
-		text-align: center;
+@media only screen and (max-width: 767px) {
+	.my-logo {
+		height: 100px;
+		width: 250px;
+		padding-right: 0;
 	}
-	#columnBg {
-		margin-top: 10px;
-	}
-	ul {
-		list-style-type: none;
-	} */
 }
-
 @media only screen and (max-width: 922px) {
 	.technicalSkillsCont {
 		text-align: center;
@@ -237,11 +229,7 @@ li {
 	ul {
 		list-style-type: none;
 	}
-	#me {
-		float: none;
-		display: block;
-		margin: auto;
-	}
+
 	.card-left p {
 		float: none;
 		display: block;
@@ -254,8 +242,129 @@ li {
 	}
 }
 
+@media only screen and (max-width: 1066px) {
+	#me {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+}
+
 @media only screen and (max-width: 1220px) {
 	footer {
 		position: relative;
 	}
+}
+
+/*!------------------------------------------------This is for the rain drops--------------------------------------*/
+.rain {
+	position: fixed;
+	left: 0;
+	width: 110%;
+	height: 100%;
+	z-index: 2;
+}
+
+body.back-row-toggle .rain.back-row {
+	display: block;
+}
+
+.drop {
+	position: absolute;
+	bottom: 100%;
+	width: 15px;
+	height: 120px;
+	pointer-events: none;
+	animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+	0% {
+		transform: translateY(0vh);
+	}
+	75% {
+		transform: translateY(90vh);
+	}
+	100% {
+		transform: translateY(90vh);
+	}
+}
+
+.stem {
+	width: 1px;
+	height: 60%;
+	margin-left: 7px;
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.25)
+	);
+	animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+	0% {
+		opacity: 1;
+	}
+	65% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.splat {
+	width: 15px;
+	height: 10px;
+	border-top: 2px dotted white;
+	border-radius: 50%;
+	opacity: 1;
+	transform: scale(0);
+	animation: splat 0.5s linear infinite;
+	display: none;
+}
+
+body.splat-toggle .splat {
+	display: block;
+}
+
+@keyframes splat {
+	0% {
+		opacity: 1;
+		transform: scale(0);
+	}
+	80% {
+		opacity: 1;
+		transform: scale(0);
+	}
+	90% {
+		opacity: 0.5;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+}
+/*!------------------------------------------------This is for the rain drops--------------------------------------*/
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+
+.snowflake {
+	position: fixed;
+	background-color: #ccc;
+	user-select: none;
+	z-index: 1000;
+	pointer-events: none;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
 }
