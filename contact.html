@@ -41,6 +41,9 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item">
+						<img class="my-logo" src="./assets/images/logo-G.png" />
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="index.html"
 							><i class="fas fa-home"></i>Home
 							<span class="sr-only">(current)</span></a
@@ -59,80 +62,119 @@
 				</ul>
 			</div>
 		</nav>
-		<div style="padding-top: 10px;" class="contact-form">
-			<div class="row cust-grid">
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cust-grid-col">
-					<!-- <div class="card card-left"> -->
-					<div class="card-left card-body">
-						<h2 class="card-title">Contact</h2>
-						<hr />
+		<form
+			class="col-md-7"
+			id="contact-form"
+			method="post"
+			action="contact.php"
+			role="form"
+		>
+			<div class="messages"></div>
+
+			<div class="controls">
+				<div class="row">
+					<div style="padding: 20px;" class="col-md-6">
+						<div class="form-group">
+							<label for="form_name">Firstname *</label>
+							<input
+								id="form_name"
+								type="text"
+								name="name"
+								class="form-control"
+								placeholder="Please enter your firstname *"
+								required="required"
+								data-error="Firstname is required."
+							/>
+							<div class="help-block with-errors"></div>
+						</div>
 					</div>
-					<!--insert form section here-->
+					<div style="padding: 20px;" class="col-md-6">
+						<div class="form-group">
+							<label for="form_lastname">Lastname *</label>
+							<input
+								id="form_lastname"
+								type="text"
+								name="surname"
+								class="form-control"
+								placeholder="Please enter your lastname *"
+								required="required"
+								data-error="Lastname is required."
+							/>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="padding: 20px;" class="col-md-6">
+						<div class="form-group">
+							<label for="form_email">Email *</label>
+							<input
+								id="form_email"
+								type="email"
+								name="email"
+								class="form-control"
+								placeholder="Please enter your email *"
+								required="required"
+								data-error="Valid email is required."
+							/>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div style="padding: 20px;" class="col-md-6">
+						<div class="form-group">
+							<label for="form_need">Please specify your need *</label>
+							<select
+								id="form_need"
+								name="need"
+								class="form-control"
+								required="required"
+								data-error="Please specify your need."
+							>
+								<option value=""></option>
+								<option value="Request Project">Request Project</option>
+								<option value="Request order status"
+									>Recruiter Looking To Recruit</option
+								>
+								<option value="Other">Other...</option>
+							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="padding: 20px;" class="col-md-12">
+						<div class="form-group">
+							<label for="form_message">Message *</label>
+							<textarea
+								id="form_message"
+								name="message"
+								class="form-control"
+								placeholder="Message for me *"
+								rows="4"
+								required="required"
+								data-error="Please, leave us a message."
+							></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="col-md-12 text-center">
+							<input
+								id="sendBtn"
+								type="submit"
+								class="btn btn-send"
+								value="Send message"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="padding: 20px;" class="col-md-12">
+						<p class="text-muted">
+							<strong>*</strong> These fields are required.
+						</p>
+					</div>
 				</div>
 			</div>
-			<form name="contact-form" action="mail.php" method="POST">
-				<!--Grid row-->
-				<div class="row cust-grid">
-					<!--Grid column-->
-					<div class="col-md-4 cust-grid-col">
-						<div class="md-form mb-0">
-							<input type="text" id="name" name="name" class="form-control" />
-							<label id="contacttext" for="name" class="">Your name</label>
-						</div>
-					</div>
-					<!--Grid column-->
-
-					<!--Grid column-->
-					<div class="col-md-4 cust-grid-col">
-						<div class="md-form mb-0">
-							<input type="text" id="email" name="email" class="form-control" />
-							<label id="contacttext" for="email" class="">Your email</label>
-						</div>
-					</div>
-					<!--Grid column-->
-				</div>
-				<!--Grid row-->
-
-				<!--Grid row-->
-				<div class="row cust-grid">
-					<div class="col-md-8 cust-grid-col">
-						<div class="md-form mb-0">
-							<input
-								type="text"
-								id="subject"
-								name="subject"
-								class="form-control"
-							/>
-							<label id="contacttext" for="subject" class="">Subject</label>
-						</div>
-					</div>
-				</div>
-				<!--Grid row-->
-
-				<!--Grid row-->
-				<div class="row cust-grid">
-					<!--Grid column-->
-					<div class="col-md-8 cust-grid-col">
-						<div class="md-form">
-							<textarea
-								type="text"
-								id="message"
-								name="message"
-								rows="2"
-								class="form-control md-textarea"
-							></textarea>
-							<label id="contacttext" for="message">Your message</label>
-						</div>
-						<div class="buttonDiv">
-							<button id="submitButton" type="submit" class="btn btn-primary">
-								Submit
-							</button>
-						</div>
-					</div>
-				</div>
-				<!--Grid row-->
-			</form>
-		</div>
+		</form>
 		<!-- Footer -->
 		<footer
 			id="smallFooter"
