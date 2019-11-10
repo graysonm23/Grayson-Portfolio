@@ -81,6 +81,11 @@ docReady(function() {
 		{ y: "0%", ease: Power2.easeInOut }
 	);
 });
+//?-------------------------------------------arrow fade function------------------------------------------------------
+$(window).scroll(function() {
+	$(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+});
+//?-------------------------------------------arrow fade function------------------------------------------------------
 //!-------------------------------------------this is for rain drops---------------------------------------------------
 var makeItRain = function() {
 	//clear out everything
