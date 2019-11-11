@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7526ad2636.js" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7526ad2636.js"
+			crossorigin="anonymous"
+		></script>
 
-    <title>Grayson McMurry</title>
-  </head>
-  <body class="back-row-toggle splat-toggle"><!--!this helps me make it rain-->
-    <div class="rain front-row"></div><!--!this helps me make it rain-->
-    <div class="page-bg"></div>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" id="navBar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <img class="my-logo" src="./assets/images/logo-G.png">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html"><i class="fas fa-portrait"></i>Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"><i class="fas fa-at"></i>Contact</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <div class="row portrow" id="portfolioContent">
-      <div style="padding-top: 10px" id="columnBgP" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-        <!-- <div class="card card-left"> -->
-        <div class="card-left card-body">
-          <h2 class="card-title">Portfolio</h2>
-          <hr />
-        </div>
-        <div class="mygames">
-          <div class="game" id="hangmanGame">
-            <a href="https://graysonm23.github.io/Word-Guess-Game/">
-            <img class="image" alt="hangman game image" src="assets/images/image1.png" /></a>
-            <h1 class="text"><span>Hangman</span></h1>
-          </div>
-          <div class="game" id="rpgGame">
-            <a onclick="return false" href="https://graysonm23.github.io/RockPaperScissors/">
-            <img class="image" alt="role-playing game image" src="assets/images/image2.jpg" /></a>
-            <h1 class="text"><span>Rpg Game(coming soon)</span></h1>
-          </div>
-          <div class="game" id="triviaGame">
-            <a href="https://graysonm23.github.io/TriviaGame/">
-            <img class="image" alt="trivia game image" src="assets/images/image3.jpg" /></a>
-            <h1 class="text"><span>Trivia Game</span></h1>
-          </div>
-          <div class="game" id="rutgersWidget">
-            <a onclick="return false" href="https://graysonm23.github.io/RockPaperScissors/">
-            <img class="image" alt="rutgers info widget image" src="assets/images/image4.jpg" /></a>
-            <h1 class="text"><span>Rutgers Info Widget(coming soon)</span></h1>
-          </div>
-          <div class="game" id="rpsGame">
-            <a href="https://graysonm23.github.io/RockPaperScissors/">
-            <img class="image" alt="rock paper scissors game image" src="assets/images/image5.png" /></a>
-            <h1 class="text"><span>Rock Paper Scissors Nostalgia-Firebase</span></h1>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
-    <footer style="position: relative" id="smallFooter" class="page-footer font-small special-color-dark pt-4">
+		<title>Grayson McMurry</title>
+	</head>
+	<body class="back-row-toggle splat-toggle">
+		<div class="page-bg"></div>
+		<nav
+			class="navbar sticky-top navbar-expand-md navbar-light bg-light"
+			id="navBar"
+		>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<img class="my-logo" src="./assets/images/logo-G.png" />
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"
+							><i class="fas fa-home"></i>Home
+							<span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html"
+							><i class="fas fa-portrait"></i>Portfolio</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"
+							><i class="fas fa-at"></i>Contact</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="mygames">
+			<div class="row">
+				<div class="col-md-6 game-col">
+					<h2>Portfolio</h2>
+					<hr />
+					<div class="col-md-12 games">
+						<a href="https://graysonm23.github.io/TriviaGame/"
+							><img
+								class="gameimage"
+								src="./assets/images/icon.jpg"
+								alt="trivia game"
+						/></a>
+					</div>
+					<div class="col-md-12 games">
+						<a href="https://graysonm23.github.io/RockPaperScissors/"
+							><img
+								class="gameimage"
+								src="./assets/images/icon2.jpg"
+								alt="rock paper scissors"
+						/></a>
+					</div>
+					<div class="col-md-12 games">
+						<a href="https://graysonm23.github.io/Word-Guess-Game/"
+							><img
+								class="gameimage"
+								src="./assets/images/icon3.jpg"
+								alt="hangman"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer
+			style="position: relative"
+			id="smallFooter"
+			class="page-footer font-small special-color-dark pt-4"
+		>
+			<!-- Footer Elements -->
+			<div class="container">
+				<!-- Social buttons -->
+				<ul class="list-unstyled list-inline text-center">
+					<li class="list-inline-item bg-dark">
+						<a
+							href="https://github.com/graysonm23"
+							class="btn-floating btn-fb mx-1"
+						>
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li class="list-inline-item bg-dark">
+						<a
+							href="https://app.slack.com/client/TLLL4DXM0/DMH76PT0Q"
+							class="btn-floating btn-tw mx-1"
+						>
+							<i class="fab fa-slack"></i>
+						</a>
+					</li>
+					<li class="list-inline-item bg-dark">
+						<a class="btn-floating btn-gplus mx-1">
+							<i class="fab fa-google-plus-g"> </i>
+						</a>
+					</li>
+					<li class="list-inline-item bg-dark">
+						<a
+							href="https://www.linkedin.com/in/grayson-mcmurry-809397163/"
+							class="btn-floating btn-li mx-1"
+						>
+							<i class="fab fa-linkedin-in"> </i>
+						</a>
+					</li>
+					<li class="list-inline-item bg-dark">
+						<a
+							href="https://stackoverflow.com/users/11872108/grayson-mcmurry"
+							class="btn-floating btn-dribbble mx-1"
+						>
+							<i class="fab fa-stack-overflow"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- Social buttons -->
+			</div>
+			<!-- Footer Elements -->
 
-        <!-- Footer Elements -->
-        <div class="container">
-    
-          <!-- Social buttons -->
-          <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item bg-dark">
-              <a href="https://github.com/graysonm23" class="btn-floating btn-fb mx-1">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item bg-dark">
-              <a href="https://app.slack.com/client/TLLL4DXM0/DMH76PT0Q" class="btn-floating btn-tw mx-1">
-                <i class="fab fa-slack"></i>
-              </a>
-            </li>
-            <li class="list-inline-item bg-dark">
-              <a class="btn-floating btn-gplus mx-1">
-                <i class="fab fa-google-plus-g"> </i>
-              </a>
-            </li>
-            <li class="list-inline-item bg-dark">
-              <a href="https://www.linkedin.com/in/grayson-mcmurry-809397163/" class="btn-floating btn-li mx-1">
-                <i class="fab fa-linkedin-in"> </i>
-              </a>
-            </li>
-            <li class="list-inline-item bg-dark">
-              <a href="https://stackoverflow.com/users/11872108/grayson-mcmurry" class="btn-floating btn-dribbble mx-1">
-                <i class="fab fa-stack-overflow"></i>
-              </a>
-            </li>
-          </ul>
-          <!-- Social buttons -->
-    
-        </div>
-        <!-- Footer Elements -->
-    
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright
-        </div>
-        <!-- Copyright -->
-    
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/javascript.js"></script>
-  </body>
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2019 Copyright</div>
+			<!-- Copyright -->
+		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+			integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+			integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/javascript/javascript.js"></script>
+	</body>
 </html>

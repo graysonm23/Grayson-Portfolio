@@ -68,11 +68,18 @@ h2 {
 	top: -0.4em;
 	transition: 0.3s ease 0.3s;
 } */
-#contact-form {
+.contactform {
 	background-color: rgb(0, 0, 0); /* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
 	border-radius: 6px;
+	margin-top: 20px;
+	padding: 30px;
 }
+
+.contactform h2 {
+	text-align: center;
+}
+
 #sendBtn {
 	background-color: #c1e6f9;
 }
@@ -105,7 +112,7 @@ footer {
 }
 
 li {
-	color: white;
+	color: black;
 }
 
 #me {
@@ -120,7 +127,8 @@ li {
 	float: right;
 }
 
-.row {
+.aboutme {
+	margin-left: 50px;
 	margin-top: 20px;
 }
 
@@ -134,19 +142,19 @@ li {
 
 .card-title {
 	text-align: center;
-	color: white;
+	color: black;
 	font-family: "Roboto", sans-serif;
 	font-family: "Lato", sans-serif;
 	font-family: "Be Vietnam", sans-serif;
 }
 
 .footer-copyright {
-	color: white;
+	color: black;
 	mix-blend-mode: difference;
 }
 
 p {
-	color: white;
+	color: black;
 	text-align: center;
 }
 
@@ -165,12 +173,12 @@ li {
 	text-align: center;
 }
 
-.mygames {
+/* .mygames {
 	display: flex;
 	flex-flow: row wrap;
-}
+} */
 
-.game {
+/* .game {
 	box-sizing: border-box;
 	flex: 0 1 33.333%;
 	position: relative;
@@ -195,9 +203,9 @@ li {
 	background-color: #1955c0;
 	color: white;
 	mix-blend-mode: hard-light;
-}
+} */
 
-.cust-grid {
+/* .cust-grid {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -205,6 +213,35 @@ li {
 
 .cust-grid-col {
 	float: none;
+} */
+
+.mygames {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.game-col {
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+	padding: 30px;
+	border-radius: 6px;
+}
+
+.game-col h2 {
+	text-align: center;
+}
+
+.gameimage {
+	max-width: 100%;
+	z-index: 10000;
+}
+
+.games {
+	padding: 10px;
+}
+
+.contactme {
+	margin-left: 50px;
 }
 
 #contacttext {
@@ -292,9 +329,9 @@ li {
 	.technicalSkillsCont {
 		text-align: center;
 	}
-	#columnBg {
+	/* #columnBg {
 		margin-top: 10px;
-	}
+	} */
 	ul {
 		list-style-type: none;
 	}
@@ -331,7 +368,7 @@ li {
 	left: 0;
 	width: 110%;
 	height: 100%;
-	z-index: 2;
+	z-index: 1;
 }
 
 body.back-row-toggle .rain.back-row {
