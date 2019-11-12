@@ -70,7 +70,6 @@
 					class="col-md-12"
 					id="contact-form"
 					method="post"
-					action="contact.php"
 					role="form"
 				>
 					<div class="messages"></div>
@@ -263,7 +262,8 @@
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
 			integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
 			crossorigin="anonymous"
-		></script>
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 		<script src="./assets/javascript/javascript.js"></script>
 	</body>
 </html>
