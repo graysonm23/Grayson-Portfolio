@@ -324,7 +324,14 @@ li {
 		padding: 0;
 		z-index: -1;
 	}
-
+	p,
+	li,
+	.game-col h2,
+	.contactform h2,
+	.Technical h4,
+	.card-body h4 {
+		color: white;
+	}
 	.aboutme,
 	.mygames,
 	.contactme {
