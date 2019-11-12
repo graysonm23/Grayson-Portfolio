@@ -1,31 +1,3 @@
-<?php
-    error_reporting( E_ALL );
-    ini_set( 'display_errors', 1 );
-	
-    if( $_SERVER['REQUEST_METHOD']=='POST' ){
-
-        define( 'DOMAIN', 'graysonmcmurry.com' ); #change
-        define( 'WEBMASTER', sprintf( 'grayson.mcmurry23@gmail.com', DOMAIN ) ); #change if req'd
-        define( 'ENQUIRIES', sprintf( 'enquiries@%s', DOMAIN ) ); #change if req'd
-        define( 'SUBJECT', sprintf( 'Enquiry for %s', DOMAIN ) ); #change if req'd
-
-
-
-        $errors=array();
-        $args=array(
-            'name'      =>
-FILTER_SANITIZE_STRING, 'surname' => FILTER_SANITIZE_STRING, 'email' =>
-FILTER_SANITIZE_EMAIL, 'need' => FILTER_SANITIZE_STRING, 'message' =>
-FILTER_SANITIZE_STRING ); foreach( array_keys( $args ) as $field ){ if( !isset(
-$_POST[ $field ] ) ) $errors[]=sprintf( 'The field "%s" is not set', $field ); }
-foreach( $_POST as $field => $value ){ if( !in_array( $field, array_keys( $args
-) ) )$errors[]=sprintf( 'Unknown field "%s"', $field ); } if( empty( $errors )
-){ $_POST=filter_input_array( INPUT_POST, $args ); extract( $_POST ); $message =
-sprintf(" Name: %s\n Surname: %s\n\n Requirement: %s\n\n Message: %s\n", $name,
-$surname, $need, $message ); $headers=array( sprintf('From: %s',$email ),
-sprintf('Reply-To: %s', WEBMASTER ) ); $status=mail( ENQUIRIES, SUBJECT,
-$message, implode( PHP_EOL, $headers ) ); header( sprintf( 'Location:
-?mailsent=%s', $status ? 'true' : 'false' ) ); } } ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
