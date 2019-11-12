@@ -16,6 +16,7 @@
 			crossorigin="anonymous"
 		></script>
 
+
 		<title>Grayson McMurry</title>
 	</head>
 	<body>
@@ -70,7 +71,7 @@
 					class="col-md-12"
 					id="contact-form"
 					method="post"
-					action="contact.php"
+					action="contactme.php"
 					role="form"
 				>
 					<div class="messages"></div>
@@ -265,5 +266,21 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./assets/javascript/javascript.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<script>
+			function getUrlParameter(name) {
+				name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+				var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+				var results = regex.exec(location.search);
+				return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+			};
+			// example.com?param1=name&param2=&id=6
+			const e = getUrlParameter('e'); // message/error response
+			if(e === '0') {
+				alert("There were errors when trying to submit the form. Please try again.")
+			} else if (e === '1'){
+				alert("Contact Form Successfully Submitted!")
+			}
+		</script>
 	</body>
 </html>

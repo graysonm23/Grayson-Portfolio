@@ -1,45 +1,41 @@
 <?php
 
 $from = "Demo Contact Form <demo@domain.com>";
-$sendTo = "Demo Contact Form <demo@domain.com>";
+$sendTo = "Grayson McMurray <Grayson.mcmurry23@gmail.com>";
 $subject = "New message from contact form";
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message',);
-$okMessage = "Contact Form Successfully Submitted!";
-$errorMessage = "There were errors, when trying to send email.";
+//$okMessage = "Contact Form Successfully Submitted!";
+//$errorMessage = "There were errors, when trying to send email.";
 
 
-error_reporting(E_ALL & ~E_NOTICE);
+//error_reporting(E_ALL & ~E_NOTICE);
 
-try {
-    if(count($_POST) == 0) throw new \Exception('Form is empty.');
-    $emailText = "You have a new message from  your contact form. \n";
+$emailText = "";
 
+//check to see if there are values from the form
+if(count($_POST) == 0){
 
-    foreach ($_POST as $key => $value){
-        if(isset($fields[$key])){
-            $emailText .= "$fields[$key] : $value\n";
-        }
-    }
+//if there are no values, redirect them back to the form
 
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from
-    );
+header('Location: /grayson/contact.html?e=0');
 
-    mail($sendTo, $subject, $emailText, implode('\n', $headers));
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-} catch (Exception $ex){
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
-
-if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) & strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' ){
-    $encoded = json_encode($responseArray);
-
-    header('Content-Type: application/json');
-
-    echo $encoded;
 } else {
-    echo $responseArray['message'];
+
+//grab all the values from the form and dump them into the body of the email
+   foreach ($_POST as $key => $value){
+           if(isset($fields[$key])){
+               $emailText .= $fields[$key]." : ".$value."\n";
+           }
+       }
+
+       $headers = array('Content-Type: text/plain; charset="UTF-8";',
+           'From: ' . $from,
+           'Reply-To: ' . $from,
+           'Return-Path: ' . $from
+       );
+
+   //send the email
+   mail($sendTo, $subject, $emailText, implode('\n', $headers));
+    //send us to back to the contact form with success
+    header('Location: /grayson/contact.html?e=1');
 }
