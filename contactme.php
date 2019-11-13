@@ -20,7 +20,7 @@ if(count($_POST) == 0){
 header('Location: /grayson/contact.html?e=0');
 
 } else {
-
+    
 //grab all the values from the form and dump them into the body of the email
    foreach ($_POST as $key => $value){
            if(isset($fields[$key])){
