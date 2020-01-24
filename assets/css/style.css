@@ -1,60 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Be+Vietnam|Lato|Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap");
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: "Roboto", sans-serif;
-	font-family: "Lato", sans-serif;
-	font-family: "Be Vietnam", sans-serif;
-}
-h2 {
-	font-family: "Roboto", sans-serif;
-	font-family: "Lato", sans-serif;
-	font-family: "Be Vietnam", sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden;
 }
 
-.page-bg {
-	background: url(../images/background-2.jpg);
-	/* -webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px); */
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background-size: cover; /* or contain depending on what you want */
-	background-position: center center;
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: auto;
-	padding: 0;
-	z-index: -1;
+#navBar {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+#page-bg {
+  /* background: url(../images/background-2.jpg); */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  z-index: -1;
 }
 
 .my-logo {
-	height: 50px;
-	width: 125px;
-	padding-right: 10px;
+  height: 50px;
+  width: 125px;
+  padding-right: 10px;
 }
 
 #columnBgP {
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-	padding: 30px 30px;
-	border-radius: 6px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 30px 30px;
+  border-radius: 6px;
 }
 
 #columnBg {
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-	padding: 30px 0px;
-	border-radius: 6px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 30px 0px;
+  border-radius: 6px;
+}
+
+#technical {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 30px 0px;
+  border-radius: 6px;
 }
 
 /* #columnBg:hover {
@@ -69,108 +81,117 @@ h2 {
 	transition: 0.3s ease 0.3s;
 } */
 .contactform {
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-	border-radius: 6px;
-	margin-top: 20px;
-	padding: 30px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 30px;
 }
 
 .contactform h2 {
-	text-align: center;
+  text-align: center;
 }
 
 #sendBtn {
-	background-color: #c1e6f9;
+  background-color: #c1e6f9;
 }
+
+#sendBtn:hover {
+  background-color: #9fd7f3;
+  transition: ease-in-out 0.2s;
+}
+
 .contact-form {
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-	padding: 80px 0px;
-	margin: 5% 10%;
-	border-radius: 6px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 80px 0px;
+  margin: 5% 10%;
+  border-radius: 6px;
 }
 
 hr {
-	background-color: white;
-	margin: 0px 45px 0px 45px;
+  background-color: white;
+  margin: 0px 45px 0px 45px;
 }
 
 footer {
-	bottom: 0;
-	left: 0;
-	right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: darken;
 }
 
 .clearFloat {
-	clear: both;
+  clear: both;
 }
 
 .card-text {
-	float: right;
-	margin: 40px;
+  float: right;
+  margin: 40px;
+  color: black;
 }
 
 li {
-	color: black;
+  color: black;
 }
 
 #me {
-	height: 250px;
-	width: 300px;
-	float: left;
-	padding-right: 40px;
-	border-radius: 10px;
+  height: 250px;
+  width: 300px;
+  float: left;
+  padding-right: 40px;
+  border-radius: 10px;
 }
 
 .right-card {
-	float: right;
+  float: right;
 }
 
 .aboutme {
-	margin-left: 50px;
-	margin-top: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  position: relative;
 }
 
 .portrow {
-	height: 90vh;
+  height: 90vh;
 }
 
 .card-body {
-	margin: 0;
+  margin: 0;
 }
 
 .card-title {
-	text-align: center;
-	color: black;
-	font-family: "Roboto", sans-serif;
-	font-family: "Lato", sans-serif;
-	font-family: "Be Vietnam", sans-serif;
+  text-align: center;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 .footer-copyright {
-	color: black;
-	mix-blend-mode: difference;
+  color: black;
+  mix-blend-mode: difference;
 }
 
 p {
-	color: black;
-	text-align: center;
+  color: black;
+  text-align: center;
 }
 
 .technicalSkillsCont {
-	padding-top: 40px;
-	text-align: center;
+  padding-top: 40px;
+  text-align: center;
 }
 
 ul {
-	list-style-type: none;
-	width: 70%;
-	margin: auto;
+  list-style-type: none;
+  width: 70%;
+  margin: auto;
 }
 
 li {
-	text-align: center;
+  text-align: center;
 }
 
 /* .mygames {
@@ -216,274 +237,347 @@ li {
 } */
 
 .mygames {
-	margin-left: 50px;
-	margin-top: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .game-col {
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-	padding: 30px;
-	border-radius: 6px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  padding: 30px;
+  border-radius: 6px;
 }
 
 .game-col h2 {
-	text-align: center;
+  text-align: center;
 }
 
 .gameimage {
-	max-width: 100%;
-	z-index: 10000;
+  max-width: 100%;
+  z-index: 10000;
 }
 
 .games {
-	padding: 10px;
+  padding: 10px;
 }
 
 .contactme {
-	margin-left: 50px;
+  margin-left: 50px;
 }
 
 #contacttext {
-	color: white;
+  color: white;
 }
 
 #submitButton {
-	background-color: inherit;
-	position: relative;
-	left: 200px;
+  background-color: inherit;
+  position: relative;
+  left: 200px;
 }
 
 .buttonDiv {
-	max-width: 500px;
-	margin: auto;
+  max-width: 500px;
+  margin: auto;
 }
 
 .fade-in {
-	opacity: 1;
+  opacity: 1;
 }
 
 .fade-out {
-	opacity: 0;
+  opacity: 0;
 }
 
 /*!-----------------------------------Bouncing Arrow---------------------------------*/
 .arrow {
-	position: absolute;
-	bottom: -1rem;
-	left: 50%;
-	margin-left: -20px;
-	width: 40px;
-	height: 40px;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
 
-	/**
+  /**
    * Dark Arrow Down
    */
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
-	background-size: contain;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+  background-size: contain;
 }
 
 .bounce {
-	animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-	0%,
-	20%,
-	50%,
-	80%,
-	100% {
-		transform: translateY(0);
-	}
-	40% {
-		transform: translateY(-30px);
-	}
-	60% {
-		transform: translateY(-15px);
-	}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 /*!-----------------------------------Bouncing Arrow---------------------------------*/
 
 @media only screen and (max-width: 767px) {
-	.my-logo {
-		height: 100px;
-		width: 250px;
-		padding-right: 0;
-	}
+  .my-logo {
+    height: 100px;
+    width: 250px;
+    padding-right: 0;
+  }
 
-	.page-bg {
-		background: url(../images/background-2nowhitespace.jpg);
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		background-size: cover; /* or contain depending on what you want */
-		background-position: center center;
-		background-repeat: no-repeat;
-		text-align: center;
-		margin: auto;
-		padding: 0;
-		z-index: -1;
-	}
-	p,
-	li,
-	.game-col h2,
-	.contactform h2,
-	.Technical h4,
-	.card-body h4 {
-		color: white;
-	}
-	.aboutme,
-	.mygames,
-	.contactme {
-		margin-left: 0;
-	}
+  #page-bg-two {
+    display: none;
+  }
+
+  /* .page-bg {
+    background: url(../images/background-2nowhitespace.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    z-index: -1;
+  } */
+  p,
+  li,
+  .game-col h2,
+  .contactform h2,
+  .Technical h4,
+  .card-body h4 {
+    color: white;
+  }
+  .aboutme,
+  .mygames,
+  .contactme {
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 922px) {
-	.technicalSkillsCont {
-		text-align: center;
-	}
-	/* #columnBg {
+  .technicalSkillsCont {
+    text-align: center;
+  }
+  /* #columnBg {
 		margin-top: 10px;
 	} */
-	ul {
-		list-style-type: none;
-	}
+  ul {
+    list-style-type: none;
+  }
 
-	.card-left p {
-		float: none;
-		display: block;
-	}
+  .card-left p {
+    float: none;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 860px) {
-	footer {
-		position: relative;
-	}
+  footer {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 1066px) {
-	#me {
-		float: none;
-		display: block;
-		margin: auto;
-	}
+  #me {
+    float: none;
+    display: block;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 1220px) {
-	footer {
-		position: relative;
-	}
+  footer {
+    position: relative;
+  }
 }
 
 /*!------------------------------------------------This is for the rain drops--------------------------------------*/
-.rain {
-	position: fixed;
-	left: 0;
-	width: 110%;
-	height: 100%;
-	z-index: 1;
+/* .rain {
+  position: fixed;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 1;
 }
 
 body.back-row-toggle .rain.back-row {
-	display: block;
+  display: block;
 }
 
 .drop {
-	position: absolute;
-	bottom: 100%;
-	width: 15px;
-	height: 120px;
-	pointer-events: none;
-	animation: drop 0.5s linear infinite;
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
 }
 
 @keyframes drop {
-	0% {
-		transform: translateY(0vh);
-	}
-	75% {
-		transform: translateY(90vh);
-	}
-	100% {
-		transform: translateY(90vh);
-	}
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
 }
 
 .stem {
-	width: 1px;
-	height: 60%;
-	margin-left: 7px;
-	background: linear-gradient(
-		to bottom,
-		rgba(255, 255, 255, 0),
-		rgba(255, 255, 255, 0.25)
-	);
-	animation: stem 0.5s linear infinite;
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.25)
+  );
+  animation: stem 0.5s linear infinite;
 }
 
 @keyframes stem {
-	0% {
-		opacity: 1;
-	}
-	65% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .splat {
-	width: 15px;
-	height: 10px;
-	border-top: 2px dotted white;
-	border-radius: 50%;
-	opacity: 1;
-	transform: scale(0);
-	animation: splat 0.5s linear infinite;
-	display: none;
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted white;
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
 }
 
 body.splat-toggle .splat {
-	display: block;
+  display: block;
 }
 
 @keyframes splat {
-	0% {
-		opacity: 1;
-		transform: scale(0);
-	}
-	80% {
-		opacity: 1;
-		transform: scale(0);
-	}
-	90% {
-		opacity: 0.5;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1.5);
-	}
-}
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+} */
 /*!------------------------------------------------This is for the rain drops--------------------------------------*/
 #snowflakeContainer {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
 }
 
 .snowflake {
-	position: fixed;
-	background-color: #ccc;
-	user-select: none;
-	z-index: 1000;
-	pointer-events: none;
-	border-radius: 50%;
-	width: 10px;
-	height: 10px;
+  position: fixed;
+  background-color: #ccc;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
+/*?--------------------------------Light/Dark Mode-----------------------------------*/
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+:root {
+  --clr-light: black;
+  --clr-dark: black;
+  --clr-blah: mix-blend-mode;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+  --blahness: var(--clr-blah);
+}
+
+.darkmode {
+  --clr-light: black;
+  --clr-dark: white;
+  --clr-blah: mix-blend-mode;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  --blahness: var(--clr-blah);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--ff-body);
+  font-size: 18px;
+  line-height: 1.6;
+  /* filter: brightness(80%); */
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 6em;
+  right: 1em;
+  color: var(--blahness);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  filter: brightness(200%) !important;
+}
+
+.fa-moon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#clickHereText {
+  mix-blend-mode: difference;
+  position: absolute;
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+  top: -20px;
+  left: -90px;
+  filter: brightness(200%) !important;
+}
+
+/*?--------------------------------Light/Dark Mode-----------------------------------*/

@@ -16,10 +16,9 @@
     
     <title>Grayson McMurry</title>
   </head>
-  <body class="back-row-toggle splat-toggle"> <!--!this helps me make it rain-->
-    <div class="rain back-row"></div><!--!this helps me make it rain-->
-    <div class="page-bg"></div>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" id="navBar">
+  <body id="body">
+    <img id="page-bg" class="page-bg" src="assets/images/background-2.jpg"/>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" id="navBar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,6 +38,10 @@
           </li>
         </ul>
       </div>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <h4 id="clickHereText">Click Here<br>for<br><span id="togglemodeText">Dark Mode</span></h4>
+        <i id="faviconMode" class="fas fa-moon"></i>
+      </button>
     </nav>
     <div class="aboutme">
       <div class="row indexrow" id="profileContent">
@@ -50,23 +53,22 @@
               <p class="card-text">
                 <img id="me" src="./assets/images/icon.png" />
                 I'm a computer guy who loves all kinds of technology. I am
-                studying part-time at SMU to be a Full-Stack Developer. When I am
+                a Full-Stack Developer. When I am
                 not learning, I am working full-time at Central Market. I love to
                 discover new food flavors and new technologies. I am consistently
                 looking for things to do. When I am at home, I like to code and
-                eat. It's pretty much my lifestyle. If I go out, it must consist
-                of food of some sort. The main food groups for me is pizza,
+                eat. It's pretty much my lifestyle... If I go out, it must consist
+                of food of some sort or have some intriguing technology. The main food groups for me is pizza,
                 Asian-inspired dishes, and coffee.
               </p>
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </div>
     <div class="arrow bounce"></div>
     <div class="aboutme">
       <div class="row indexrow" id="profileContentTwo">
-        <div id="columnBg" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div id="technical" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <!-- <div class="card"> -->
           <div class="card-body Technical">
               <h4 class="card-title">Technical Skills</h4>
@@ -78,9 +80,10 @@
                       <li><i class="fab fa-js-square"></i>JavaScript</li>
                       <li>JQuery</li>
                       <li><i class="fab fa-github"></i>Git</li>
-                      <li>Ajax</li>
+                      <li>Express.js</li>
                       <li>JSON</li>
-                      <li>Firebase</li>
+                      <li>JWT</li>
+                      <li>Nodemailer</li>
                       <li><i class="fab fa-node-js"></i>Node.js</li>
                   </ul></p>
               </div>
@@ -89,6 +92,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Footer -->
     <!-- Footer -->
     <footer id="smallFooter" class="clearFloat page-footer font-small special-color-dark pt-4">
@@ -98,27 +102,27 @@
 
         <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item bg-dark">
+          <li style="color: rgb(255, 99, 43);"  class="list-inline-item">
             <a href="https://github.com/graysonm23" class="btn-floating btn-fb mx-1">
               <i class="fab fa-github"></i>
             </a>
-          </li>
-          <li class="list-inline-item bg-dark">
+          </li" >
+          <li style="color: rgb(255, 99, 43);" class="list-inline-item">
             <a href="https://app.slack.com/client/TLLL4DXM0/DMH76PT0Q" class="btn-floating btn-tw mx-1">
               <i class="fab fa-slack"></i>
             </a>
           </li>
-          <li class="list-inline-item bg-dark">
+          <li class="list-inline-item">
             <a class="btn-floating btn-gplus mx-1">
               <i class="fab fa-google-plus-g"> </i>
             </a>
           </li>
-          <li class="list-inline-item bg-dark">
+          <li style="color: rgb(255, 99, 43);" class="list-inline-item">
             <a href="https://www.linkedin.com/in/grayson-mcmurry-809397163/" class="btn-floating btn-li mx-1">
               <i class="fab fa-linkedin-in"> </i>
             </a>
           </li>
-          <li class="list-inline-item bg-dark">
+          <li style="color: rgb(255, 99, 43);" class="list-inline-item">
             <a href="https://stackoverflow.com/users/11872108/grayson-mcmurry" class="btn-floating btn-dribbble mx-1">
               <i class="fab fa-stack-overflow"></i>
             </a>
